@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+}
+#header{
+    background: rgb(233, 232, 173);
+    height: 150px;
+    width: 100%;
+}
+#main{
+    background: rgb(155, 141, 216);
+    height: 800px;
+    width: 70%;
+    float: left;
+}
+#sidebar{
+    background: rgb(222, 209, 226);
+    height: 800px;
+    width: 30%;
+    float: left;
+}
+#footer{
+    background: rgb(92, 94, 91);
+    height: 200px;
+    width: 100%;
+    clear: both;
+}
