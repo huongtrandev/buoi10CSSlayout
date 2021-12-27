@@ -3,8 +3,9 @@ body{
 }
 #header{
     background: rgb(233, 232, 173);
-    height: 150px;
-    width: 100%;
+    padding: 75px;
+    text-align: center;
+
 }
 #main{
     background: rgb(155, 141, 216);
