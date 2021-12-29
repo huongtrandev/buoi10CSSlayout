@@ -26,3 +26,16 @@ color: white;
 #menu li:hover{
 background-color: rgb(180, 108, 108);
 }
+
+#menu li .miniopt:hover {
+    background-color: rgb(98, 66, 128);
+}
+#menu ul ul {
+    position: absolute;
+    top: 0;
+    left: 140px;
+    visibility: hidden;
+}
+ #menu ul li:hover ul {
+     visibility: visible;
+ }
