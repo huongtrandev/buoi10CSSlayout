@@ -2,26 +2,56 @@ body{
 font-family: Arial;
 }
 
-#menu, #menu ul, #menu li{
+/* Định dạng font chữ cho phần body */
+
+#menu ul{
     padding: 0;
     margin: 0;
 }
+
+/* Xác định vị trí cho menu dọc */
 
 #menu li{
 list-style: none;
 position: relative;
 width: 100px;
 height: 30px;
-padding: 0 20px;
+text-align: left;
+padding: 0 0 0 15px;
 background-color: black;
 line-height: 30px;
 cursor: pointer;  
 }
 
+/* Xóa bỏ ký hiệu list mặc định;
+Để position relative để trình đơn miniopt hiện lên
+ngang hàng với trình đơn option;
+để chiều rộng chiều cao của ô menu li;
+căn lề trái cho nội dung menu li;
+để padding 15px để tránh sát lề không đẹp;
+đặt background color;
+line-heiht khó hiều vl, có nghĩa là khoảng cách từ
+chân text dòng này đến chân text dòng sau, dòng trên cùng 
+nó coi như có mặc định một dòng phía trên nó;
+cursor:pointer là đổi còn chuột thành bàn tay
+  */
+
 #menu li a{
 text-decoration: none;
 color: white;
 }
+
+#menu ul ul {
+    position: absolute;
+    top: 0;
+    left: 115px;
+    visibility: hidden;
+}
+
+/* Để position cho trình đơn miniopt, ở đây định dang là
+ngang bằng top với phần tử cha, và bên trái cha 115px;  */
+
+/* Từ đây xuống là không ý kiến gì */
 
 #menu li:hover{
 background-color: rgb(180, 108, 108);
@@ -30,12 +60,7 @@ background-color: rgb(180, 108, 108);
 #menu li .miniopt:hover {
     background-color: rgb(98, 66, 128);
 }
-#menu ul ul {
-    position: absolute;
-    top: 0;
-    left: 140px;
-    visibility: hidden;
-}
+
  #menu ul li:hover ul {
      visibility: visible;
  }

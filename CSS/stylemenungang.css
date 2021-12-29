@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, Tahoma;
+}
+
+/* Định dạng font chữ cho phần body */
+
+#menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+/* Xác định vị trí cho menu ngang */
+
+#menu li {
+    list-style: none;
+    position: relative;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    background-color: rgb(61, 43, 68);
+    line-height: 30px;
+    float: left;
+}
+
+/* Xóa bỏ ký hiệu list mặc định;
+Để position relative để trình đơn miniopt hiện lên
+ngang hàng với trình đơn option;
+để chiều rộng chiều cao của ô menu li;
+căn lề giữa cho nội dung menu li;
+đặt background color; có nghĩa là khoảng cách từ
+chân text dòng này đến chân text dòng sau, dòng trên cùng 
+nó coi như có mặc định một dòng phía trên nó;
+  */
+
+#menu li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+/* display thằng a element thành block để có thể
+định dạng khuôn khung, nếu không sẽ mất khung;
+textdecor-none là để bỏ gạch chân */
+
+#menu ul ul {
+    position: absolute;
+    top: 30px;
+    visibility: hidden;
+}
+
+/* Để position cho trình đơn miniopt, ở đây định dạng
+ là bên dưới cha 30px;  */
+
+/* Từ đây xuống không ý kiến gì */
+
+#menu li a:hover {
+    background-color: tomato;
+}
+
+#menu ul li:hover ul {
+    visibility: visible;
+}
